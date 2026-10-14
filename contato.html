@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contato | Meu Portfólio</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="topo"><a class="logo" href="index.html">&lt;MeuPortfólio<span>/&gt;</span></a><nav aria-label="Menu principal"><a href="index.html">Home</a><a href="curriculo.html">Currículo</a><a href="github.html">GitHub</a><a href="servicos.html">Serviços</a><a class="ativo" href="contato.html">Contato</a></nav></header>
+<main class="pagina">
+  <section class="cabecalho-pagina"><p class="sobretitulo">VAMOS CONVERSAR</p><h1>Entre em contato</h1><p>Preencha os campos abaixo para descrever sua ideia e solicitar uma proposta.</p></section>
+  <section class="secao grade dois contato-grade">
+    <div><h2>Conte sobre seu projeto</h2><p>Informe os dados necessários para que eu possa entender sua necessidade e planejar os próximos passos.</p><div class="cartao"><h3>Informações importantes</h3><p>O formulário deste exemplo é demonstrativo e ainda não envia os dados para um servidor. Para receber solicitações reais, será necessário conectar um serviço de formulários ou um backend.</p></div><p><a href="servicos.html">Consulte os serviços e preços →</a></p></div>
+    <form class="formulario" action="#" method="post" onsubmit="event.preventDefault(); document.getElementById('mensagem').hidden=false;">
+      <div class="campo"><label for="nome">Nome completo *</label><input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="name" required></div>
+      <div class="grade dois campos-curtos">
+        <div class="campo"><label for="telefone">Telefone *</label><input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" autocomplete="tel" required></div>
+        <div class="campo"><label for="email">E-mail *</label><input type="email" id="email" name="email" placeholder="voce@email.com" autocomplete="email" required></div>
+      </div>
+      <fieldset class="campo"><legend>Você é pessoa física ou jurídica? *</legend><label class="opcao"><input type="radio" name="tipo_cliente" value="Pessoa física" required> Pessoa física</label><label class="opcao"><input type="radio" name="tipo_cliente" value="Pessoa jurídica"> Pessoa jurídica</label></fieldset>
+      <div class="campo"><label for="horario">Melhor horário para contato *</label><select id="horario" name="horario" required><option value="">Selecione uma opção</option><option>Manhã (8h às 12h)</option><option>Tarde (12h às 18h)</option><option>Noite (18h às 21h)</option><option>Qualquer horário</option></select></div>
+      <div class="campo"><label for="servico">Tipo de serviço desejado *</label><select id="servico" name="servico" required><option value="">Escolha um serviço</option><option>Landing page</option><option>Site estático HTML e CSS</option><option>Site dinâmico</option><option>Site avançado</option><option>Manutenção ou atualização</option><option>Outro</option></select></div>
+      <fieldset class="campo"><legend>Quais recursos você gostaria de incluir?</legend><label class="opcao"><input type="checkbox" name="recursos" value="Galeria"> Galeria de imagens</label><label class="opcao"><input type="checkbox" name="recursos" value="Formulário"> Formulário de contato</label><label class="opcao"><input type="checkbox" name="recursos" value="Redes sociais"> Links para redes sociais</label><label class="opcao"><input type="checkbox" name="recursos" value="Responsivo"> Layout para celular</label></fieldset>
+      <div class="campo"><label for="orcamento">Faixa de orçamento</label><select id="orcamento" name="orcamento"><option value="">Selecione (opcional)</option><option>Até R$ 400</option><option>R$ 400 a R$ 900</option><option>R$ 900 a R$ 1.800</option><option>Acima de R$ 1.800</option><option>Preciso de orientação</option></select></div>
+      <div class="campo"><label for="prazo">Prazo desejado</label><input type="date" id="prazo" name="prazo"></div>
+      <div class="campo"><label for="descricao">Descreva brevemente o que deseja contratar *</label><textarea id="descricao" name="descricao" rows="5" placeholder="Conte um pouco sobre seu projeto..." required></textarea></div>
+      <label class="opcao concordancia"><input type="checkbox" name="consentimento" required> Concordo em fornecer estes dados para que entrem em contato comigo sobre esta solicitação. *</label>
+      <button class="botao" type="submit">Enviar solicitação</button>
+      <p id="mensagem" class="sucesso" hidden>Formulário validado! Este é um protótipo acadêmico; os dados não foram enviados.</p>
+      <p class="nota">* Campos obrigatórios. Evite informar dados pessoais além do necessário.</p>
+    </form>
+  </section>
+  <div class="navegacao-paginas"><a href="servicos.html">← Serviços</a><a href="index.html">Voltar à Home →</a></div>
+</main>
+<footer><p>© 2026 Calebe · <a href="index.html">Home</a> · <a href="github.html">GitHub</a></p></footer>
+</body></html>
